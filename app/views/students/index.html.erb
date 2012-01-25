@@ -1,3 +1,8 @@
+<%= form_tag(students_path, {:class => "form", :method => "get"}) do %>
+  <%= select_tag :class_day, options_for_select([["All Classes", ""],["Mon/Wed/Fri","MWF"],["Tues/Thurs","TTH"]], params[:class_day]) %>
+  <%= submit_tag "Filter" %>
+<% end %>
+
 <table class="studentstable">
   <caption> Code Academy Winter 2012 Students</caption>
   <th>Picture</th>
