@@ -1,0 +1,15 @@
+<%= form_for @student do |f| %>
+  
+  <ul>
+    <li><%= f.label :first_name, "First Name" %><%= f.text_field :first_name %></li>
+    <li><%= f.label :last_name, "Last Name" %><%= f.text_field :last_name %></li>
+    <li></li>
+    <li></li>
+    <li><%= f.submit "Submit Changes" %></li>
+  </ul>
+<% end %> 
+  
+<%= link_to  "Back to Student page", @student %>
+<%= link_to  "Back to Students list", students_path %>
+  
+  
