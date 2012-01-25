@@ -1,0 +1,10 @@
+<ul>
+  <li><%= image_tag @student.image_url  %></li>
+  <li><%= @student.full_name %></li>
+  <li><%= @student.class_day %></li>
+  <li><%= @student.class_type %></li>
+  <li><%= @student.gender %></li>
+
+</ul>
+
+<%= link_to  "Back to Students list", students_path %>

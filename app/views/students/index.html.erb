@@ -7,9 +7,9 @@
   <th>Gender</th>
 <% @students.each do |student| %>
   <tr>
-    <td><%= image_tag(student.image_url,
-          :title => "#{student.first_name} #{student.last_name}") %>
-    <td><%= student.first_name %> <%= student.last_name %></td>
+    <td class="image"><%= image_tag(student.image_url,
+          :title => student.full_name) %>
+    <td><%= link_to student.full_name, student %></td>
     <td><%= student.class_day %></td>
     <td><%= student.class_type %></td>
     <td><%= student.gender %></td>
