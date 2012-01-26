@@ -36,6 +36,8 @@ a:active {
 body {
   background-color:#000;
   color:#FFF;
+  width: 800px;
+  margin: auto;
 }
 
 h1 {
@@ -75,4 +77,28 @@ tr.studentstable {
 
   padding: 0px 10px;  
   text-align: center;
+}
+
+/* --- :form ---- */
+
+.form {
+  margin: auto;
+  text-align: center;
+}
+
+/* --- :header ---- */
+
+header {
+  margin: auto;
+  border: 2px;
+}
+
+header ul {
+  padding: 0px;  
+  text-align: center;
+}
+
+header ul li {
+  display: inline;
+  padding: 10px;
 }
