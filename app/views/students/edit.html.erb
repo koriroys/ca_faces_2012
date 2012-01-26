@@ -3,13 +3,28 @@
   <ul>
     <li><%= f.label :first_name, "First Name" %><%= f.text_field :first_name %></li>
     <li><%= f.label :last_name, "Last Name" %><%= f.text_field :last_name %></li>
-    <li></li>
-    <li></li>
+    <li><%= f.label :class_day, "Class Day" %>
+      <ul>
+        <li><%= f.radio_button :class_day, "MWF" %><%= f.label :class_day, "MWF" %></li>
+        <li><%= f.radio_button :class_day, "TTH" %><%= f.label :class_day, "TTH" %></li>
+      </ul>
+    </li>
+    
+    <li><%= f.label :class_type, "Class Type: " %>
+      <ul>
+        <li><%= f.radio_button :class_type, "Development" %><%= f.label :class_type, "Development" %></li>
+        <li><%= f.radio_button :class_type, "Design" %><%= f.label :class_type, "Design" %></li></li>
+        
+      </ul>
+    
+    <li><%= f.label :gender, "Gender" %>
+      <ul>
+        <li><%= f.radio_button :gender, "M" %><%= f.label :gender, "Male" %></li>
+        <li><%= f.radio_button :gender, "F" %><%= f.label :gender, "Female" %></li>
+      </ul>
     <li><%= f.submit "Submit Changes" %></li>
   </ul>
 <% end %> 
   
-<%= link_to  "Back to Student page", @student %>
+<%= link_to  "Back to Student page", @student %><br/>
 <%= link_to  "Back to Students list", students_path %>
-  
-  

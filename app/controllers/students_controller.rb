@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  http_basic_authenticate_with :name => "kori", :password => "fireball", :only => [:edit, :update]
   
   def index
     if params[:class_day].present?

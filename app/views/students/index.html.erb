@@ -12,8 +12,8 @@
   <th>Gender</th>
 <% @students.each do |student| %>
   <tr>
-    <td class="image"><%= image_tag(student.image_url,
-          :title => student.full_name) %>
+    <td class="image"><%= link_to image_tag(student.image_url,
+          :title => student.full_name), student %>
     <td><%= link_to student.full_name, student %></td>
     <td><%= student.class_day %></td>
     <td><%= student.class_type %></td>
