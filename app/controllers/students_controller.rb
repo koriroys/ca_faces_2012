@@ -22,4 +22,10 @@ class StudentsController < ApplicationController
     @student.update_attributes(params[:student])
     redirect_to @student
   end
+  
+  private
+  
+    def build_hash_for_filter(hash)
+
+    end
 end
